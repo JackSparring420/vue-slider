@@ -41,7 +41,7 @@ var carusel = new Vue({
     // funzioni per click
     methods: {
         nextSlide: function(){
-            if(this.activeSlide > this.slides.length -1){
+            if(this.activeSlide >= this.slides.length -1){
                 this.activeSlide = 0 
             } else {
             ++this.activeSlide
